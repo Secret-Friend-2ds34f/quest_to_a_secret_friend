@@ -1,22 +1,9 @@
 window.onload = function(){
-	document.querySelector('#quest_1').style.display = 'block'
+	document.querySelector('#start').style.display = 'block'
 }
 
 function wrong_ans() {
-	/*document.body.style.background = 'linear-gradient(to right, #fc4a1a, #f7b733);'
-	console.log('red')
-	for(let i = 0; i < 6; i++) {
-		console.log(i)
-		setTimeout(function() {
-			if(i % 2 == 0){
-				document.body.style.background = 'linear-gradient(to right, #fc4a1a, #f7b733);' //red
-				console.log('red')
-			} else {
-				document.body.style.background = 'linear-gradient(to right, #00f260, #0575e6);'
-				console.log('def')
-			}
-		}, 500)
-	}*/
+
 	document.querySelector('#wrong_ans').style.display = 'block'
 }
 
@@ -32,7 +19,7 @@ function start_bt_click() {
 
 function ans_1_bt_click() {
 	hide_wrong_ans()
-	if(document.querySelector('#ans_1').value === 'сальмонеллёз'){
+	if(document.querySelector('#ans_1').value.toLowerCase() === 'сальмонеллёз'){
 		document.querySelector('#quest_1').style.display = 'none'
 		document.querySelector('#quest_2').style.display = 'block'
 	} else {
@@ -42,7 +29,7 @@ function ans_1_bt_click() {
 
 function ans_2_bt_click(){
 	hide_wrong_ans()
-	if(document.querySelector('#ans_2').value === 'отряд'){
+	if(document.querySelector('#ans_2').value.toLowerCase() === 'отряд'){
 		document.querySelector('#quest_2').style.display = 'none'
 		document.querySelector('#quest_3').style.display = 'block'
 	} else {
@@ -51,7 +38,7 @@ function ans_2_bt_click(){
 }
 function ans_3_bt_click(){
 	hide_wrong_ans()
-	if(document.querySelector('#ans_3').value === 'золотая путина'){
+	if(document.querySelector('#ans_3').value.toLowerCase() === 'золотая путина'){
 		document.querySelector('#quest_3').style.display = 'none'
 		document.querySelector('#quest_4').style.display = 'block'
 	} else {
@@ -61,7 +48,7 @@ function ans_3_bt_click(){
 
 function ans_4_bt_click() {
 	hide_wrong_ans()
-	if(document.querySelector('#ans_4').value === 'комиссар'){
+	if(document.querySelector('#ans_4').value.toLowerCase() === 'комиссар'){
 		document.querySelector('#quest_4').style.display = 'none'
 		document.querySelector('#quest_5').style.display = 'block'
 	} else {
@@ -71,7 +58,7 @@ function ans_4_bt_click() {
 
 function ans_5_bt_click() {
 	hide_wrong_ans()
-	if(document.querySelector('#ans_5').value === 'дорожная карта'){
+	if(document.querySelector('#ans_5').value.toLowerCase() === 'дорожная карта'){
 		document.querySelector('#quest_5').style.display = 'none'
 		document.querySelector('#finish').style.display = 'block'
 	} else {
